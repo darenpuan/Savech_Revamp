@@ -1,5 +1,14 @@
 /*Global*/
 
+html {
+    height: 100%;
+}
+
+body {
+    background-size: cover;
+    height: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -121,6 +130,18 @@ a.btn {
 .btn-white:hover {
     background: transparent;
     border-color: white;
+    color: white;
+}
+
+.btn-submit {
+    background: #35CCC2;
+    border-color: #35CCC2;
+    color: white;
+}
+
+.btn-submit:hover {
+    background: #35CCC2;
+    border-color: #35CCC2;
     color: white;
 }
 
@@ -266,7 +287,7 @@ footer {
 
 #about {
     text-align: center;
-    background: white 50% -10px no-repeat;
+    background-size: cover;
 }
 
 #about .container {
@@ -290,7 +311,6 @@ footer {
 
 #services {
     text-align: center;
-    background: white 50% -10px no-repeat;
     background-size: cover;
 }
 
@@ -306,4 +326,25 @@ footer {
 
 #services h3 {
     color: #35CCC2;
+}
+
+
+/*Contact*/
+
+#contact {
+    text-align: center;
+    background-size: cover;
+}
+
+#contact .container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+#contact h4 {
+    color: #35CCC2;
+}
+
+label {
+    color: white;
 }
