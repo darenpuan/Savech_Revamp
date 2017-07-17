@@ -70,8 +70,29 @@ a.btn {
     font-weight: bold;
 }
 
-button.btn:focus {
-    outline: none !important;
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .btn-danger {
@@ -87,6 +108,18 @@ button.btn:focus {
 .btn-success:hover {
     background: #6a9b3d;
     border-color: #6a9b3d;
+}
+
+.btn-white {
+    background: transparent;
+    border-color: white;
+    color: white;
+}
+
+.btn-white:hover {
+    background: transparent;
+    border-color: white;
+    color: white;
 }
 
 img {
@@ -209,10 +242,16 @@ body {
     -o-background-size: cover;
 }
 
-.carousel-caption {
-    text-align: center;
-    top: 40%;
-    bottom: initial;
+@media screen and (min-height:565px) {
+    .carousel-caption {
+        text-align: center;
+        top: 40%;
+        bottom: initial;
+    }
+}
+
+footer {
+    margin: 50px 0;
 }
 
 
