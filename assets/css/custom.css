@@ -211,7 +211,7 @@ section h3 {
 }
 
 .navbar-inverse .navbar-nav .active a {
-    color: aqua;
+    color: #35CCC2;
     background-color: transparent;
 }
 
@@ -231,6 +231,11 @@ body {
 
 .carousel-inner {
     height: 100%;
+}
+
+.icon-prev,
+.icon-next {
+    color: white;
 }
 
 .fill {
@@ -273,4 +278,8 @@ footer {
         position: relative;
         border-right: 1px solid #E5E5E5;
     }
+}
+
+#about h3 {
+    color: #35CCC2;
 }
