@@ -1,3 +1,172 @@
+/*Global*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    font-family: "Avenir Black";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1,
+h2 {
+    margin: 0 0 40px;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h2 small {
+    color: white;
+}
+
+body,
+small {
+    font-family: "Avenir Light";
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+p.lead {
+    font-weight: normal;
+}
+
+a:link,
+a:visited {
+    color: #35ccc2;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #35ccc5;
+}
+
+button,
+input,
+.btn,
+a.btn {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: white;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+button.btn:focus {
+    outline: none !important;
+}
+
+.btn-danger {
+    background-color: #dd5638;
+    border-color: #d95131;
+}
+
+.btn-success {
+    background: #79b044;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #6a9b3d;
+    border-color: #6a9b3d;
+}
+
+img {
+    max-width: 100%;
+}
+
+.badge.social {
+    background: #ccc;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 5px 20px 0;
+    padding: 0;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    color: white;
+}
+
+.badge.social.twitter:hover {
+    background: #55acee;
+}
+
+.badge.social.facebook:hover {
+    background: #3b5998;
+}
+
+.badge.social.google:hover {
+    background: #db4b39;
+}
+
+blockquote {
+    padding: 0;
+    border: none;
+    font-style: italic;
+    text-align: left
+}
+
+blockquote cite {
+    display: block;
+    color: #777;
+    margin: 15px 0 0 0;
+}
+
+blockquote:before {
+    display: none;
+}
+
+
+/*Index Layout*/
+
+.row+.row {
+    margin-top: 20px
+}
+
+section {
+    padding: 80px 0;
+}
+
+section.main-content {
+    padding: 40px 0;
+}
+
+.section-header {
+    text-align: center;
+}
+
+section h2 {
+    margin: 20px 0 40px;
+}
+
+section h3 {
+    margin: 30px 0 10px;
+}
+
+
+/*NavBar*/
+
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -7,8 +176,53 @@
     text-align: center;
 }
 
+.navbar-inverse .navbar-nav .active a {
+    color: aqua;
+    background-color: transparent;
+}
+
+
+/*Carousel*/
+
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 .carousel-caption {
     text-align: center;
     top: 40%;
     bottom: initial;
+}
+
+
+/*About Us*/
+
+#about {
+    background: white url(/assets/img/penPaper.jpg) 90% -10px no-repeat;
+}
+
+#about .container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
 }
