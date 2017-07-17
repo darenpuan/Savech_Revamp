@@ -41,6 +41,7 @@ small {
 
 p {
     margin: 0 0 15px;
+    color: white;
 }
 
 p.lead {
@@ -258,10 +259,18 @@ footer {
 /*About Us*/
 
 #about {
-    background: white url(/assets/img/penPaper.jpg) 90% -10px no-repeat;
+    text-align: center;
+    background: white 50% -10px no-repeat;
 }
 
 #about .container {
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .border {
+        position: relative;
+        border-right: 1px solid #E5E5E5;
+    }
 }
