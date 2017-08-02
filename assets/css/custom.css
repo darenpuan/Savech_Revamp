@@ -279,7 +279,26 @@ body {
 }
 
 footer {
-    margin: 50px 0;
+    background: rgba(34, 34, 34, 1);
+    color: #777;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+footer a:link,
+footer a:hover,
+footer a:active,
+footer a:after {
+    color: #777;
+    padding: 0px;
+}
+
+footer.div {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: right;
 }
 
 
