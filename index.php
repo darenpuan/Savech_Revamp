@@ -2,12 +2,12 @@
 	if (isset($_POST["submit"])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
-		$subject = $_POST['subject'];
+		$subjectform = $_POST['subject'];
         $message = $_POST['message'];
 		$from = 'Site 1'; 
 		$to = 'enquiries@savech.com.sg';
 		$subject = 'New enquiries on Savech.com.sg';
-		$body ="<html><body>From: $name<br/> E-Mail: $email<br/> Subject: $subject<br/> Message: $message</body></html>";
+		$body ="<html><body>From: $name<br/> E-Mail: $email<br/> Subject: $subjectform<br/> Message: $message</body></html>";
 		// Always set content-type when sending HTML email
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -245,8 +245,8 @@ if (!$errName && !$errEmail && !$errSubject && !$errMessage) {
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="message-id">Message</label>
-                            <textarea name="message" class="form-control" id="message-id" placeholder="Message" required value="<?php echo htmlspecialchars($_POST['message']); ?>">
-                            <?php echo "<p class='text-danger'>$errMessage</p>";?></textarea>
+                            <textarea name="message" class="form-control" id="message-id" placeholder="Message" required value="<?php echo htmlspecialchars($_POST['message']); ?>"></textarea>
+                            <?php echo "<p class='text-danger'>$errMessage</p>";?>
                         </div>
                         <button name="submit" class="btn btn-submit pull-right" type="submit" value="Submit"><span>Submit</span></button>
                     </form>
