@@ -35,6 +35,10 @@
 if (!$errName && !$errEmail && !$errSubject && !$errMessage) {
 	if (mail ($to, $subject, $body, $headers)) {
 		$result='<div class="alert alert-success">Thank You</div>';
+        document.getElementById("name-id").value = "";
+        document.getElementById("email-id").value = "";
+        document.getElementById("subject-id").value = "";
+        document.getElementById("message-id").value = "";
 	} else {
 		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
 	}
